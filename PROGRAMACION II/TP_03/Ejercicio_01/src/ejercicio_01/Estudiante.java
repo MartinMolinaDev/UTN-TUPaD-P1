@@ -1,0 +1,34 @@
+package ejercicio_01;
+
+public class Estudiante {
+    // Atributos
+    private String nombre;
+    private String apellido;
+    private String curso;
+    private double calificacion;
+    
+    // Constructor
+    public Estudiante(String nombre, String apellido, String curso, double calificacion) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.curso = curso;
+        this.calificacion = calificacion;
+    }
+    
+    // Método para mostrar información del estudiante
+    public void mostrarInfo() {
+        System.out.println("Nombre: " + nombre + " " + apellido);
+        System.out.println("Curso: " + curso);
+        System.out.println("Calificación: " + calificacion);
+    }
+    
+    // Método para subir calificación
+    public void subirCalificacion(double puntos) {
+        calificacion += puntos;
+    }
+    
+    // Método para bajar calificación
+    public void bajarCalificacion(double puntos) {
+        calificacion -= puntos;
+    }
+}
